@@ -1,10 +1,10 @@
 html {
-  @include desktop {
+  /* @include desktop {
     font-size: 15px;
   }
   @include tablets {
     font-size: 14px;
-  }
+  } */
 }
 body,
 html {
@@ -57,6 +57,9 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
+    @include tablets {
+      grid-template-columns: 1fr;
+    }
   }
   &--footer {
     padding: 60px 0;
@@ -64,6 +67,12 @@ body {
     grid-template-areas: "logo . links1 links2 links3"
     "developer . links1 links2 links3"
     "design . links1 links2 links3";
+    @include tablets {
+      grid-template-areas: "logo . ."
+      "links1 links2 links3"
+      "developer . ."
+      "design . .";
+    }
   }
   @include desktop {
     margin: 0;

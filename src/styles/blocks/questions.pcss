@@ -5,6 +5,13 @@
   grid-template-areas: "one two"
   "desc1 desc2";
   position: relative;
+  @include tablets {
+    grid-template-areas: "one"
+    "two"
+    "desc1"
+    "desc2";
+    grid-gap: 20px;
+  }
   &__block {
     background: $text-color;
     padding: 30px;
@@ -75,6 +82,9 @@
   }
   &__bg-icon {
     position: absolute;
+    @include desktop {
+      display: none;
+    }
     &--one {
       top: 108px;
       left: -60px;

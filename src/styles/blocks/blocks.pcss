@@ -119,6 +119,9 @@
       text-transform: uppercase;
       margin-bottom: 60px;
     }
+    @include tablets {
+      padding-bottom: 109px;
+    }
     &-form {
       background: #fff;
       width: 500px;
@@ -128,6 +131,9 @@
       position: relative;
       @include desktop {
         width: 402px;
+      }
+      @include tablets {
+        width: 608px;
       }
       &-input {
         outline: none;
@@ -165,6 +171,11 @@
       left: 100px;
       width: 506px;
       height: 195px;
+      @include tablets {
+        width: 408px;
+        height: 157px;
+        left: 150px;
+      }
     }
   }
 }

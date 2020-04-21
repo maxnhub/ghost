@@ -14,6 +14,9 @@
     &:hover {
       color: #50AAF5;
     }
+    @include tablets {
+      margin-bottom: 40px;
+    }
   }
   &__row {
     display: flex;
@@ -23,6 +26,9 @@
     font-size: 15px;
     line-height: 20px;
     margin-bottom: 10px;
+    @include tablets {
+      margin-bottom: 40px;
+    }
     &-link {
       color: $second-color;
       transition: all 0.3s;
@@ -54,6 +60,9 @@
     }
     &--three {
       grid-area: links3;
+    }
+    @include tablets {
+      margin-bottom: 40px;
     }
   }
   &__item {

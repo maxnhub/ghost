@@ -35,6 +35,9 @@
         display: none;
       }
     }
+    @include tablets {
+      width: 523px;
+    }
     &-item {
       display: flex;
       font-family: Futura PT Cond Extra;
@@ -46,6 +49,11 @@
       margin-right: 50px;
       &:last-child {
         margin-right: 0px;
+      }
+      &--third {
+        @include tablets {
+          display: none;
+        }
       }
     }
     &-tickblock {
@@ -89,6 +97,10 @@
       width: 1366px;
       height: 400px;
       background: url('../images/content/main2.png') -170px 0/cover no-repeat;
+    }
+    @include tablets {
+      background: url('../images/content/main2.png') -435px 0/cover no-repeat;
+      margin-bottom: 50px;
     }
   }
   &__other {
