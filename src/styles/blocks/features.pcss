@@ -24,6 +24,12 @@
       transform: translate( 0, -40px);
       width: 100%;
     }
+    @include phones {
+      grid-template-columns: 1fr 1fr;
+    }
+    @include medium-phones {
+      grid-template-columns: 1fr;
+    }
   }
   &__item {
     height: 280px;

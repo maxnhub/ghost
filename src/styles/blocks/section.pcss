@@ -24,6 +24,17 @@
   @include desktop {
     padding-top: 140px;
   }
+  @include phones {
+    padding-top: 40px;
+  }
+  &--features {
+    @include phones {
+      padding-top: 160px;
+    }
+    @include medium-phones {
+      padding-top: 140px;
+    }
+  }
   &--annotation {
     @include desktop {
       padding-top: 40px;
@@ -70,12 +81,19 @@
           display: none;
         }
       }
+      @include phones {
+        width: 346px;
+        padding: 20px;
+      }
     }
     &--question {
       width: 745px;
       margin-bottom: 60px;
       @include tablets {
         transform: translateX(-20px);
+      }
+      @include medium-phones {
+        width: 332px;
       }
     }
     &--storesAnd {
@@ -88,6 +106,11 @@
         left: 20px;
       }
     }
+    @include phones {
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 40px;
+    }
   }
   &__subtitle {
     font-family: Futura PT Cond Extra;
@@ -99,6 +122,16 @@
     margin-bottom: 20px;
     &--process {
       margin-bottom: 10px;
+    }
+    @include phones {
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 22px;
+    }
+    @include medium-phones {
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 27px;
     }
   }
 }

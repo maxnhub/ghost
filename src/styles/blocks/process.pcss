@@ -21,6 +21,12 @@
         flex-direction: row;
         min-height: 251px;
       }
+      @include phones {
+        min-height: auto;
+      }
+      @include medium-phones {
+        flex-direction: column;
+      }
       &--move {
         margin-top: 40px;
         margin-bottom: 0px;
@@ -37,6 +43,16 @@
         margin-bottom: 0;
         margin-right: 20px;
         width: 211px;
+      }
+      @include phones {
+        width: 145px;
+        max-height: 145px;
+      }
+      @include medium-phones {
+        margin-bottom: 20px;
+        margin-right: 0px;
+        width: 295px;
+        max-height: 295px;
       }
     }
     &-desc {

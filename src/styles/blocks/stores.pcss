@@ -38,6 +38,17 @@
     @include tablets {
       width: 523px;
     }
+    @include phones {
+      width: 436px;
+      padding: 20px;
+    }
+    @include medium-phones {
+      display: grid;
+      grid-template-areas: "one"
+      "two";
+      width: 229px;
+      grid-gap: 40px;
+    }
     &-item {
       display: flex;
       font-family: Futura PT Cond Extra;
@@ -85,6 +96,28 @@
     }
     &-name {
       padding-left: 15px;
+      @include phones {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 16px;
+      }
+      &--one, &--two {
+        @include phones {
+          font-weight: 800;
+          font-size: 30px;
+          line-height: 30px;
+        }
+      }
+      &--one {
+        @include medium-phones {
+          grid-area: one;
+        }
+      }
+      &--two {
+        @include medium-phones {
+          grid-area: two;
+        }
+      }
     }
   }
   &__bg {
@@ -102,10 +135,18 @@
       background: url('../images/content/main2.png') -435px 0/cover no-repeat;
       margin-bottom: 50px;
     }
+    @include phones {
+      background: url('../images/content/main2.png') -600px 0/cover no-repeat;
+    }
+    @include medium-phones {
+      width: 900px;
+      height: 264px;
+      background-position: -415px 0;
+    }
   }
   &__other {
-    justify-content: center;
-    display: flex;
+    display: grid;
+    grid-template-areas: "one two three";
     &-block {
       display: flex;
       flex-direction: column;
@@ -127,6 +168,16 @@
           margin-bottom: 0px;
         }
       }
+    }
+    @include phones {
+      grid-template-areas: "one two"
+      "three .";
+      grid-gap: 24px;
+    }
+    @include medium-phones {
+      grid-template-areas: "one"
+      "three"
+      "two";
     }
   }
 }

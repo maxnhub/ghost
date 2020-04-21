@@ -10,6 +10,14 @@
     line-height: 80px;
     text-transform: uppercase;
     margin-bottom: 10px;
+    @include phones {
+      font-weight: 800;
+      font-size: 60px;
+      line-height: 50px;
+    }
+    @include medium-phones {
+      text-align: center;
+    }
   }
   &__subtitle {
     font-family: Futura PT Cond Extra;
@@ -19,6 +27,11 @@
     line-height: 35px;
     text-transform: uppercase;
     margin-bottom: 40px;
+    @include phones {
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 30px;
+    }
   }
   &__field {
     margin: 0 auto;
@@ -27,6 +40,12 @@
     align-items: center;
     position: relative;
     height: 713px;
+    @include phones {
+      height: 490px;
+    }
+    @include medium-phones {
+      height: 580px;
+    }
   }
   &__bg {
     position: absolute;
@@ -52,6 +71,15 @@
       width: 1000px;
       height: 479px;
       left: -15%;
+    }
+    @include phones {
+      width: 760px;
+      height: 364px;
+    }
+    @include medium-phones {
+      width: 1148px;
+      height: 550px;
+      left: -415px;
     }
   }
 }

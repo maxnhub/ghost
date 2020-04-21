@@ -68,10 +68,27 @@ body {
     "developer . links1 links2 links3"
     "design . links1 links2 links3";
     @include tablets {
+      padding: 40px 0;
       grid-template-areas: "logo . ."
       "links1 links2 links3"
       "developer . ."
       "design . .";
+    }
+    @include phones {
+      padding: 30px 0;
+      grid-template-areas: "logo ."
+      "links1 links2"
+      "links3 ."
+      "developer ."
+      "design .";
+    }
+    @include medium-phones {
+      grid-template-areas: "logo"
+      "links1"
+      "links2"
+      "links3"
+      "developer"
+      "design";
     }
   }
   @include desktop {
@@ -89,9 +106,14 @@ body {
       padding: 40px 20px;
     }
   }
-  @include phones {
-    width: 85%;
+  &--otherstores {
+    display: flex;
+    justify-content: center;
+    @include medium-phones {
+      justify-content: flex-start;
+    }
   }
+
 }
 
 .fullscreen-section {
