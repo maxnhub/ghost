@@ -18,6 +18,11 @@
     @include medium-phones {
       text-align: center;
     }
+    @include small-phones {
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 40px;
+    }
   }
   &__subtitle {
     font-family: Futura PT Cond Extra;
@@ -31,6 +36,11 @@
       font-weight: 800;
       font-size: 30px;
       line-height: 30px;
+    }
+    @include small-phones {
+      font-weight: 800;
+      font-size: 20px;
+      line-height: 20px;
     }
   }
   &__field {
@@ -80,6 +90,11 @@
       width: 1148px;
       height: 550px;
       left: -415px;
+    }
+    @include small-phones {
+      width: 992px;
+      height: 474px;
+      left: -358px;
     }
   }
 }

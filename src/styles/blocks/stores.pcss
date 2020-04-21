@@ -49,6 +49,10 @@
       width: 229px;
       grid-gap: 40px;
     }
+    @include small-phones {
+      grid-template-areas: "one two";
+      width: 100%;
+    }
     &-item {
       display: flex;
       font-family: Futura PT Cond Extra;
@@ -66,6 +70,9 @@
           display: none;
         }
       }
+      @include small-phones {
+        margin-right: 0;
+      }
     }
     &-tickblock {
       width: 30px;
@@ -80,6 +87,10 @@
         width: 20px;
         height: 20px;
       }
+      @include small-phones {
+        width: 20px;
+        height: 20px;
+      }
     }
     &-img {
       position:absolute;
@@ -88,6 +99,12 @@
       width: 20px;
       height: 16px;
       &--other {
+        top: 35%;
+        left: 30%;
+        width: 10px;
+        height: 7px;
+      }
+      @include small-phones {
         top: 35%;
         left: 30%;
         width: 10px;
@@ -106,6 +123,11 @@
           font-weight: 800;
           font-size: 30px;
           line-height: 30px;
+        }
+        @include small-phones {
+          font-weight: 800;
+          font-size: 20px;
+          line-height: 20px;
         }
       }
       &--one {
@@ -142,6 +164,11 @@
       width: 900px;
       height: 264px;
       background-position: -415px 0;
+    }
+    @include small-phones {
+      width: 800px;
+      height: 235px;
+      background-position: -385px 0;
     }
   }
   &__other {
