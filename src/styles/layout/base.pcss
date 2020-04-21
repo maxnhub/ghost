@@ -31,7 +31,8 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1180px;
+  max-width: 1200px;
+  padding: 0 20px;
   width: 100%;
   // width: 1490px;
 
@@ -47,6 +48,7 @@ body {
       padding-left: 20px;
     }
   }
+  
   &--mobileapp {
     display: flex;
     justify-content: space-between;
@@ -65,10 +67,19 @@ body {
   }
   @include desktop {
     margin: 0;
-    max-width: 984px;
     width: 100%;
+    padding: 0 20px;
   }
-
+  &--features {
+    @include desktop {
+      padding: 0;
+    }
+  }
+  &--footer {
+    @include desktop {
+      padding: 40px 20px;
+    }
+  }
   @include phones {
     width: 85%;
   }

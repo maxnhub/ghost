@@ -29,6 +29,12 @@
       border-right: 16px solid transparent;
       border-bottom: 0px solid transparent;
     }
+    @include desktop {
+      transform: translate(0, 0);
+      &:after, &:before {
+        display: none;
+      }
+    }
     &-item {
       display: flex;
       font-family: Futura PT Cond Extra;
@@ -79,6 +85,11 @@
     width: 1366px;
     height: 400px;
     background: url('../images/content/main2.png') 0 0/cover no-repeat;
+    @include desktop {
+      width: 1366px;
+      height: 400px;
+      background: url('../images/content/main2.png') -170px 0/cover no-repeat;
+    }
   }
   &__other {
     justify-content: center;
