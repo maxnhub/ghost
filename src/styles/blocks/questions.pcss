@@ -1,0 +1,103 @@
+.questions {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 62px;
+  grid-template-areas: "one two"
+  "desc1 desc2";
+  position: relative;
+  &__block {
+    background: $text-color;
+    padding: 30px;
+    color: #fff;
+    &--one {
+      grid-area: one;
+    }
+    &--two {
+      grid-area: two;
+    }
+    &-title {
+      font-family: Futura PT Cond Extra;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 27px;
+      text-transform: uppercase;
+    }
+    &-text {
+      font-family: HelveticaNeueCyr;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 25px;
+      margin-top: 20px;
+    }
+  }
+  &__desc {
+    display: flex;
+    flex-direction: column;
+    padding-left: 45px;
+    &--one {
+      grid-area: desc1;
+    }
+    &--two {
+      grid-area: desc2;
+    }
+    &-item {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      margin-bottom: 22px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+      &-title {
+        font-family: HelveticaNeueCyr;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 25px;
+      }
+      &-text {
+        font-family: HelveticaNeueCyr;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+      }
+    }
+    &-icon {
+      position: absolute;
+      top: 0;
+      left: -45px;
+      width: 30px;
+      height: 30px;
+    }
+  }
+  &__bg-icon {
+    position: absolute;
+    &--one {
+      top: 108px;
+      left: -60px;
+    }
+    &--two {
+      top: 209px;
+      left: 185px;
+    }
+    &--third {
+      top: -30px;
+      left: 465px;
+    }
+    &--four {
+      top: 100px;
+      left: 582px;
+    }
+    &--five {
+      top: -44px;
+      right: -31px;
+    }
+    &--six {
+      top: 180px;
+      right: 30px;
+    }
+  }
+}

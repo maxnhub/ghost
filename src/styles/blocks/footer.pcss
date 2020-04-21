@@ -1,0 +1,73 @@
+.footer {
+  color: #fff;
+  background: $text-color;
+  &__logo {
+    font-family: Futura PT Cond Extra;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    grid-area: logo;
+    margin-bottom: 10px;
+    &:hover {
+      color: #50AAF5;
+    }
+  }
+  &__row {
+    display: flex;
+    font-family: HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    &-link {
+      color: $second-color;
+      transition: all 0.3s;
+      &:hover {
+        color: #50AAF5;
+      }
+    }
+    &--dev {
+      grid-area: developer;
+    }
+    &--des {
+      grid-area: design;
+      margin-bottom: 0px;
+    }
+  }
+  &__list {
+    display: flex;
+    flex-direction: column;
+    font-family: HelveticaNeueCyr;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    &--one {
+      grid-area: links1;
+    }
+    &--two {
+      grid-area: links2;
+    }
+    &--three {
+      grid-area: links3;
+    }
+  }
+  &__item {
+    margin-bottom: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &-link {
+      
+      transition: all 0.3s;
+      
+      &:hover {
+        color: $second-color;
+      }
+    }
+  }
+}

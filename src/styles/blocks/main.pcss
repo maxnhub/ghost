@@ -1,0 +1,43 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__title {
+    font-family: Futura PT Cond Extra;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 90px;
+    line-height: 80px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  &__subtitle {
+    font-family: Futura PT Cond Extra;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 35px;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+  }
+  &__field {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 713px;
+  }
+  &__bg {
+    position: absolute;
+    bottom: 0;
+    left: 13%;
+    z-index: -5;
+    width: 1422px;
+    height: 680px;
+    background: url('../images/content/main.png') 0 0/ cover no-repeat;
+    @include desktop {
+      left: -16%;
+    }
+  }
+}

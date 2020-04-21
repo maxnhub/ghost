@@ -1,0 +1,74 @@
+.section {
+  padding-top: 160px;
+  &--main {
+    padding-top: 80px;
+  }
+  &--stores {
+    margin-top: 83px;
+  }
+  &--questions {
+    padding-top: 120px;
+  }
+  &--annotation {
+    padding-top: 60px;
+    margin-bottom: 60px;
+  }
+  &__title {
+    font-family: Futura PT Cond Extra;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 50px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    &--blocked {
+      background: $second-color;
+      padding: 30px 20px;
+      width: 500px;
+      position: relative;
+      &:before {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: 0;
+        left: -40px;
+        border-right: 20px solid $second-color;
+        border-top: 110px solid transparent;
+        border-left: 20px solid transparent;
+      }
+      &:after {
+        content: '';
+        width: 0;
+        height: 0;
+        position: absolute;
+        bottom: 0;
+        right: -20px;
+        border-top: 110px solid $second-color;
+        border-right: 20px solid transparent;
+        border-bottom: 0px solid transparent;
+      }
+    }
+    &--question {
+      width: 745px;
+      margin-bottom: 60px;
+    }
+    &--storesAnd {
+      position: absolute;
+      bottom: -30px;
+      left: 175px;
+    }
+  }
+  &__subtitle {
+    font-family: Futura PT Cond Extra;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 27px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    &--process {
+      margin-bottom: 10px;
+    }
+  }
+}

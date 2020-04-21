@@ -1,0 +1,44 @@
+@mixin desktopHd() {
+  @media screen and (max-width: $bp-desktop-hd) {
+    @content;
+  }
+}
+
+@mixin desktop() {
+  @media screen and (max-width: $bp-desktop) {
+    @content;
+  }
+}
+
+@mixin tablets() {
+  @media screen and (max-width: $bp-tablets) {
+    @content;
+  }
+}
+
+@mixin phones() {
+  @media screen and (max-width: $bp-phones) {
+    @content;
+  }
+}
+
+@mixin medium-phones() {
+  @media screen and (max-width: $bp-medium-phones) {
+    @content;
+  }
+}
+
+@mixin small-phones() {
+  @media screen and (max-width: $bp-small-phones) {
+    @content;
+  }
+}
+
+@mixin normaltext {
+  font-family: Helvetica Neue;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 20px;
+}
+

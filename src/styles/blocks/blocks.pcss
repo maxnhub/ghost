@@ -1,0 +1,167 @@
+.blocks {
+  &__socials {
+    background: url('../images/content/joinus-frame.png') 0 0/ contain no-repeat, $second-color;
+    padding: 30px 0px 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &-field {
+      display: flex;
+      justify-content: space-evenly;
+      padding-top: 40px;
+      width: 100%;
+      &-item {
+        width: 140px;
+        height: 140px;
+        background: #fff;
+        border-radius: 50%;
+        position: relative;
+      }
+      &-icon {
+        position: absolute;
+        &--inst {
+          width: 56px;
+          height: 56px;
+          top: 30%;
+          left: 30%;
+        }
+        &--twit {
+          width: 68px;
+          height: 56px;
+          top: 30%;
+          left: 30%;
+        }
+      }
+      &-btn {
+        position: absolute;
+        bottom: -30px;
+        left: 15px;
+        padding: 11px 10px 11px 15px;
+        background: $text-color;
+        border-radius: 70px;
+        width: 111px;
+        height: 50px;
+        &-desc {
+          display: flex;
+          align-items: center;
+        }
+        &-text {
+          font-family: Futura PT Cond Extra;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 30px;
+          line-height: 27px;
+          color: #fff;
+          text-transform: uppercase;
+          margin-right: 10px;
+        } 
+        &-plus {
+          width: 30px;
+          height: 30px;
+          background: $second-color;
+          border-radius: 50%;
+          position: relative;
+          
+          &:before {
+            position: absolute;
+            top: 13px;
+            left: 8px;
+            content: '';
+            width: 14px;
+            height: 4px;
+            background: $text-color;
+          }
+          &:after {
+            position: absolute;
+            top: 8px;
+            left: 13px;
+            content: '';
+            width: 4px;
+            height: 14px;
+            background: $text-color;
+          }
+        }
+      }
+      &-item {
+        transition: all 0.3s;
+        cursor: pointer;
+        &:hover {
+          & .blocks__socials-field-icon {
+            fill: $second-color;
+          }
+          & .blocks__socials-field-btn-plus:after {
+            background: #fff;
+          }
+          & .blocks__socials-field-btn-plus:before {
+            background: #fff;
+          }
+        }
+      }
+    }
+  }
+  &__email {
+    background: $text-color;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    & .section__title {
+      color: #fff;
+    }
+    &-subtitle {
+      font-family: HelveticaNeueCyr;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 15px;
+      line-height: 16px;
+      color: #fff;
+      text-transform: uppercase;
+      margin-bottom: 60px;
+    }
+    &-form {
+      background: #fff;
+      width: 500px;
+      height: 60px;
+      border-radius: 100px;
+      padding: 20px;
+      position: relative;
+      &-input {
+        outline: none;
+        border: none;
+        &:placeholder {
+          font-family: HelveticaNeueCyr;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 20px;
+          color: #969696;
+        }
+      }
+      &-btn {
+        padding: 15px 30px;
+        background: $second-color;
+        color: $text-color;
+        border-radius: 50px;
+        font-family: HelveticaNeueCyr;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        &:hover {
+          color: #fff;
+        }
+      }
+    }
+    &-bg {
+      position: absolute;
+      top: 120px;
+      left: 100px;
+      width: 506px;
+      height: 195px;
+    }
+  }
+}

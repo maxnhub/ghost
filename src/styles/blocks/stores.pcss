@@ -1,0 +1,109 @@
+.stores {
+  &__subtitles {
+    display: flex;
+    background: $text-color;
+    padding: 20px 10px;
+    position: relative;
+    color: #fff;
+    width: 855px;
+    transform: translate(130px,-30px);
+    &:before {
+      content: '';
+      width: 0;
+      height: 0;
+      position: absolute;
+      bottom: 0;
+      left: -31px;
+      border-right: 16px solid $text-color;
+      border-top: 75px solid transparent;
+      border-left: 16px solid transparent;
+    }
+    &:after {
+      content: '';
+      width: 0;
+      height: 0;
+      position: absolute;
+      bottom: 0;
+      right: -15px;
+      border-top: 75px solid $text-color;
+      border-right: 16px solid transparent;
+      border-bottom: 0px solid transparent;
+    }
+    &-item {
+      display: flex;
+      font-family: Futura PT Cond Extra;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 40px;
+      line-height: 35px;
+      text-transform: uppercase;
+      margin-right: 50px;
+      &:last-child {
+        margin-right: 0px;
+      }
+    }
+    &-tickblock {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: $second-color;
+      position: relative;
+      &--other {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    &-img {
+      position:absolute;
+      top: 25%;
+      left: 18%;
+      width: 20px;
+      height: 16px;
+      &--other {
+        top: 35%;
+        left: 30%;
+        width: 10px;
+        height: 7px;
+      }
+    }
+    &-name {
+      padding-left: 15px;
+    }
+  }
+  &__bg {
+    position: relative;
+    margin: 0 auto;
+    width: 1366px;
+    height: 400px;
+    background: url('../images/content/main2.png') 0 0/cover no-repeat;
+  }
+  &__other {
+    justify-content: center;
+    display: flex;
+    &-block {
+      display: flex;
+      flex-direction: column;
+      margin-right: 40px;
+      &:last-child {
+        margin-right: 0;
+      }
+      &-name {
+        display: flex;
+        align-items: center;
+        margin-bottom: 25px;
+        font-family: HelveticaNeueCyr;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 16px;
+        text-transform: uppercase;
+        &:last-child {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
+}

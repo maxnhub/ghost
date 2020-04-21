@@ -1,0 +1,11 @@
+{
+  "text-color": "#000000",
+  "second-color": "#FFD500;",
+  "bp-desktop-hd": "1920px",
+  "bp-desktop": "1024px",
+  "bp-tablets": "768px",
+  "bp-phones": "576px",
+  "bp-medium-phones": "375px",
+  "bp-small-phones": "320px"
+
+}
